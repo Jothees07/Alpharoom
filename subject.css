@@ -1,0 +1,141 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+nav ul{
+    border: 0px;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 0px;
+}
+nav ul::after{
+    clear: both;
+}
+nav li{
+    float: left;
+    padding: 5px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: default;
+}
+nav li a{
+    color: black;
+    text-align: center;
+    padding: 18px 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+nav h3 {
+    padding: 0px;
+    margin-left: 0px;
+    border: 0px;
+}
+#back_btn{
+    margin-left: 8px;
+    cursor: pointer;
+}
+#back_btn:hover{
+    background-color: rgb(212, 211, 211);
+    border-radius: 50%;
+}
+#user_btn{
+    float: right;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+nav{
+    border-bottom: 1.8px solid rgb(73, 73, 73);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.nav_shadow{
+    box-shadow: 0px -3px 15px black;
+    background-color: white;
+}
+#main{
+    height: 1000px;
+    width: 80%;
+    margin-top:65px;
+    margin-left: 10%;
+    border-radius: 25px;   
+}
+#image {
+    background: url(subject_bg.jpg) no-repeat center;
+    background-size:cover;
+    height: 300px;
+    border-radius: 25px;
+}
+.subject_name{
+    margin-left: 20px;
+    padding-top: 10px;
+    color: white;
+    text-shadow: black;
+    text-decoration: underline;
+}
+#new_post{
+    width: 98%;
+    margin-top: 15px;
+    border: 1px solid rgb(54, 54, 54);
+    border-radius: 10px;
+    padding: 10px;
+}
+#new_post:hover{
+    box-shadow: 0px 0px 8px rgb(121, 120, 120);
+}
+#new_post input{
+    padding: 5px;
+    width: 92%;
+    border: none;
+    font-size: 16px;
+}
+#new_post input:focus{
+    outline: none;
+}
+#add_post_btn{
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 50%;
+}
+#add_post_btn:hover{
+    background-color: rgb(192, 192, 192);
+}
+.post, .post_pdf{
+    background-color: transparent;
+    min-height: 70px;
+    width: 100%;
+    margin-top: 15px;
+}
+.post_pdf{
+    border: 1px solid rgb(54, 54, 54);
+    border-radius: 10px;
+    
+}
+.post_content:hover, .post_pdf:hover{
+    box-shadow: 0px 0px 8px rgb(121, 120, 120);
+}
+.post_content, .post_pdf_content{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.post_pdf_content{
+    margin-left: 10px;
+}
+.post_content p {
+    margin-left: 10px;
+}
+.post_content{
+    border: 1px solid rgb(54, 54, 54);
+    border-radius: 10px;
+}
+.post_pdf_content a {
+    color: red;
+    text-decoration: none;
+}

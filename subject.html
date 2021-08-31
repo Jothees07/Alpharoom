@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>Subject</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="subject.css">
+</head>
+<body>
+    <nav >
+        <ul>
+            <li id="back_btn">
+                <a href="index.html"><i class="fa fa-reply" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a>TASKS</a>
+            </li>
+            <li id="user_btn">
+                <a><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="image">
+            <h1 class="subject_name">HACKATHON</h1>
+        </div>
+        <div id="posts_main">
+            <div id="new_post">
+                <label for="new_post_icon"><i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i></label> &nbsp;
+                <input type="text" name="add_post" id="add_post" placeholder="Add New Post" required>
+                <i class="fa fa-arrow-right" id="add_post_btn" onclick="add_new_post()" aria-hidden="true"></i>
+            </div>
+            <div id="posts">
+                <div id="post" class="post">
+                    <div class="post_content">
+                        <p class="post_content_msg">Every student should attend the class in a proper manner. The tests related to the topic teached will be conducted the same day. Timing will be informed later. <br> Happy learning :-)</p>
+                    </div>
+                
+                </div>
+                <div class="post_pdf">
+                    <div class="post_pdf_content">
+                        <p>please refer to the notes</p>
+                        <a href="dummy.pdf" target="blank">
+                            <i class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></i>
+                                demo
+                        </a> 
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    $(window).scroll(function(){
+    if ($(window).scrollTop() >= 20) {
+       $('nav').addClass('nav_shadow');
+    }
+    else {
+       $('nav').removeClass('nav_shadow');
+    }
+    });
+</script>
+
+<script>
+    function add_new_post(){
+        var new_post = document.getElementById('add_post').value;
+        if (new_post=="") {
+            alert("Please type the message to post!!");
+        } else {
+            var post_div = document.getElementsByClassName('post')[0].innerHTML ;
+            $("#posts").prepend(post_div);
+            document.getElementsByClassName('post_content_msg')[0].innerHTML = new_post;
+        
+            document.getElementById('add_post').value = '';  
+        }
+        
+        
+    }
+</script>
+
+</html>

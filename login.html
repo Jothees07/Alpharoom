@@ -1,0 +1,55 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <link rel="stylesheet" href="login.css">
+        <script src="login.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Login-ALPHAROOM</title>
+    </head>
+    <body>
+        <div id="login" class="container">
+            <div class="content">
+            <form>
+                <legend><i class="fa fa-user-circle-o " aria-hidden="true"></i> LOGIN</legend><br>
+                <input type="text" name="name" id="username_login" placeholder="USER NAME" ><br>
+                <input type="password" name="password" id="password_login" placeholder="PASSWORD">
+                
+            </form>
+            <div class="button">
+                <span>
+                    <button onclick="document.getElementById('signup').style.display='block';document.getElementById('login').style.display='none'; ">SIGNUP</button>
+                </span>
+                <span>
+                    <button onclick="login()">LOGIN</button>
+                </span>
+            </div>
+            <br>
+            <div id="forgot_psw"><a href="#">Forgot Password?</a></div>
+            </div>
+        </div>
+        <div id="signup" class="container">
+            <div class="content">
+            <form>
+                <legend><i class="fa fa-user-circle-o " aria-hidden="true"></i> SIGNUP</legend><br>
+                <input type="text" name="name" id="username_signup" placeholder="USER NAME" ><br>
+                <input type="password" name="password" id="password_signup" placeholder="PASSWORD"><br>
+                <input type="password" name="re-password" id="re_password_signup" placeholder="RE-ENTER PASSWORD">
+                
+            </form>
+            <div class="button">
+                <span>
+                    <button onclick="document.getElementById('signup').style.display='none';document.getElementById('login').style.display='block'; ">LOGIN</button>
+                </span>
+                <span>
+                    <button onclick="signup()">REGISTER</button>
+                </span>
+            </div>
+            
+            </div>
+        </div>
+    </body>
+</html>

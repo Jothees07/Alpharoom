@@ -1,0 +1,145 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+nav ul{
+    border: 0px;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 0px;
+}
+nav ul::after{
+    clear: both;
+}
+nav li{
+    float: left;
+    padding: 5px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    cursor: default;
+}
+nav li a{
+    color: black;
+    text-align: center;
+    padding: 18px 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+nav h3 {
+    padding: 0px;
+    margin-left: 0px;
+    border: 0px;
+}
+#back_btn{
+    margin-left: 8px;
+    cursor: pointer;
+}
+#back_btn:hover{
+    background-color: rgb(212, 211, 211);
+    border-radius: 50%;
+}
+#user_btn{
+    float: right;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+nav{
+    border-bottom: 1.8px solid rgb(73, 73, 73);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.nav_shadow{
+    box-shadow: 0px -3px 15px black;
+    background-color: white;
+}
+#main{
+    height: 1000px;
+    margin-top:65px;
+}
+#task_nav{
+    margin-left: 20%;
+}
+#task_nav ul{
+    border: 0px;
+    width: 70%;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding-left: 0px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+#task_nav li:last-child{
+    border-left: 1px solid black;
+}
+#task_nav li{
+    float: left;
+    width: 49.8%;
+    text-align: center;
+    padding: 15px 0px;
+    margin-right: 0%;
+    
+}
+#task_nav li:hover{
+    background-color: rgb(212, 211, 211);
+}
+#task_nav li a{
+    color: black;
+    text-align: center;
+    padding: 18px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.task_nav_active{
+    background-color: rgb(182, 181, 181);
+}
+
+.work{
+    height: 70px;
+    width: 80%;
+    margin-left: 10%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+}
+.work img{
+    height: 45px;
+    width: 45px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+.work h4{
+    padding: 0px;
+    margin: 10px 0px 0px 0px;
+}
+.work p{
+    padding: 0px;
+    margin: 5px 0px 0px 0px;
+}
+.work button{
+    background-color: rgb(130, 255, 47);
+    opacity: 0.7;
+    margin-top: 15px;
+}
+.work button:hover{
+    opacity: 1;
+    background-color: rgb(24, 185, 24);
+}
+.work div:nth-of-type(2){
+    flex-basis: 80%;
+}
+#completed button:hover{
+    background-color: rgb(130, 255, 47);
+    opacity: 0.7;
+}

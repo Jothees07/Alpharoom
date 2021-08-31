@@ -1,0 +1,61 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <title>ALPHAROOM</title>
+    </head>
+    <body>
+        <nav id="nav_bar">
+        <span>
+            <span><img id="nav_logo" src="logodm.png" alt="A"></span>
+            <span id="name_logo">ALPHAROOM</span>
+        </span>
+        <span class="right_nav">
+            <span > <button class="Add_button" onclick="addCard()">+</button></span>
+            <span id="user_button"><i class="fa fa-user-circle-o " aria-hidden="true" style="font-size:35px"></i></span>
+        </span>
+    </nav>
+<div class="main_content">
+        <div class="sidenav">
+            <a href="task.html">Tasks</a>
+            <a href="#">Meetings</a> 
+        </div>
+        <div class="sidenav_2">
+            <div>Class Rooms</div>
+
+        </div>
+        <div class="container_add">
+            <div class="container" onclick="window.location.href= 'subject.html'">
+                <div class="details">
+                    <span><i class="fa fa-book" aria-hidden="true"></i></span>
+                    <span id="classname">HACKATHON</span>
+                    <div id="purpose">Planning</div>
+            </div>
+            <div><i class="fa fa-graduation-cap" aria-hidden="true" style="font-size: 60px;"></i></div>
+            <div >
+                <span><i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size:20px;margin-left: 100px;"></i></span>
+                <span><i class="fa fa-envelope" aria-hidden="true" style="font-size: 20px;margin: 5px;"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
+        
+    </body>
+    <script>
+        function addCard(){
+            let card=document.getElementsByClassName("container_add")[0].innerHTML;
+            $(".main_content").append(card);
+            $(".main_content").css("display","flex","flex-direction","row","height","300px");
+            document.getElementsByClassName("container")[0].style.display='flex';
+            
+        };
+    
+    </script>
+</html>
